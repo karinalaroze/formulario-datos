@@ -1,2 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <title> Formulario de Validacion </title>
+  </head>
+  <body>
+ 
+    <h2 align="center"> Formulario de Datos </h2>
+    <form action="post">
+        <p align="center">
+        <label for="name"> Nombre </label><br>
+        <input type="text" name="name" required><br>
+        </p>
+        <p align="center">
+        <label for="lastname">Apellido</label><br>
+        <input type="text" name="lastname" required><br>
+        </p>
+        <p align="center">
+        <label for="telefono">Teléfono</label><br>
+        <input type="text" name="telefono" pattern="" title="" required><br>
+        </p>
+        <p align="center">
 
+        <label for="dropdown required">Escoge tu carro para continuar</label><br></br>
 
+        <select name="dropdown" required>
+
+            <option value=""> Escoge tu carro </option>
+            <option value=""> Volvo </option>
+            <option value=""> Saab </option>
+            <option value=""> Mercedes </option>
+            <option value=""> Audi </option>
+            </select>
+
+        </p> <br>
+        <p align="center">
+        <label for="email">Email</label><br>
+        <input type="emial" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required><br>
+        </p>
+        <p align ="center">
+        <label for="pw">Crea tu contraseña</label><br>
+        <input type="clave" name="pw" pattern=".{6,}" title="debe tener 6 o más caracteres" required>
+        </p>
+        <p align="center">
+        <button>ENVIAR</button>
+        </p>
+    </form>
+    <script src="js/javascript.js"> </script>
+  </body>
+</html>
